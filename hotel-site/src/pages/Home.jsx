@@ -9,6 +9,8 @@ import Aco4 from "../assets/aco4.png";
 import AliceCarousel from 'react-alice-carousel';
 import { Row, Col } from 'reactstrap';
 import Service from "../components/Service";
+import OtherService from "../components/OtherService";
+
 
 
 
@@ -55,12 +57,12 @@ const Home = () => {
 
 
   return (
-    <div className=" bg-black">
+    <div className=" ">
       <section >
         <Header />
       </section>
 
-      <section className="p-5">
+      <section className=" bg-black">
 
         
         <div className="bg-black p-6 h-2/3">
@@ -100,7 +102,7 @@ const Home = () => {
       </section>
 
 
-      <section className="p-5">
+      <section className="p-5 bg-black">
         <div className="">
           <h1 className="text-4xl text-white font-serif ">Our Accommodations</h1>
           <p className="text-white text-md mt-3">Where luxury embraces nature. Immerse yourself in our exclusive underwater rooms, where marine wonders meet modern comfort. Experience the enchantment of drifting off to sleep surrounded by the mesmerizing dance of marine life. Alternatively, find solace in our nature-inspired accommodations, hidden within lush landscapes, offering a serene escape from the everyday.</p>
@@ -108,7 +110,7 @@ const Home = () => {
 
 
 
-        {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3 mt-5">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3 mt-5">
           
         {accommodations.map((accommodation, index) => (
         <Accommodation
@@ -119,7 +121,7 @@ const Home = () => {
           price={accommodation.price}
         />
       ))}
-        </div> */}
+        </div>
 
 {/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3 mt-3  lg:block xl:block">
   <div className="hidden lg:block xl:block ">
@@ -158,8 +160,7 @@ const Home = () => {
   </div> */}
 
 
-<div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3 mt-3">
-      {/* For lg size, use AliceCarousel */}
+{/* <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-3 mt-3">
       <div className="hidden lg:block xl:block">
         {accommodations.map((accommodation, index) => (
           <Accommodation
@@ -172,7 +173,6 @@ const Home = () => {
         ))}
       </div>
 
-      {/* For other sizes, use a grid layout */}
       <div className="lg:hidden xl:hidden">
         <AliceCarousel
           mouseTracking
@@ -192,17 +192,24 @@ const Home = () => {
           ))}
         </AliceCarousel>
       </div>
-    </div>
+    </div> */}
 
 
 
       </section>
 
-      <section>
-       <div>
+      <section className="">
+       <div className="">
          <Service/>
        </div>
       </section>
+
+      <section className="bg-white mt-8">
+         <div>
+          <OtherService/>
+         </div>
+</section>
+
     </div>
   );
 };

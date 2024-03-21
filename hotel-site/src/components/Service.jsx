@@ -8,8 +8,10 @@ import "../style/Style.css";
 const Service = () => {
   return (
     <>
-      <div className=" service-background ">
-        <div className="text-center text-white mt-6 mb-7 lg:mb-1 md:mb-1">
+    <div className="mb-5 " style={{height:"900px"}}>
+      <div className=" service-background " style={{height:"550px"}}>
+        
+        <div className="text-center text-white  mb-7 lg:mb-1 md:mb-1">
           <div className="flex justify-center">
             <img src={logoFish} alt="" className=" w-12 h-12" />
           </div>
@@ -71,6 +73,7 @@ const Service = () => {
               </p>
             </div>
           </div>{" "}
+        </div>
         </div>
       </div>
     </>

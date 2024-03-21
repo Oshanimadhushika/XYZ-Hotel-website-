@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <div className="h-auto dark-overlay" style={backgroundImageStyle}>
-      <div className="p-4 w-full h-full bg-opacity-40 bg-black">
+      <div className="w-full h-full bg-opacity-40 bg-black">
         <div className="flex justify-between">
           <NavBar />
         </div>
@@ -47,7 +47,7 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="flex flex-col lg:flex-row md:flex-col   mt-8 mb-10 pb-4 pt-4">
+        <div className="flex flex-col lg:flex-row md:flex-col   mt-8  pb-4 pt-4">
           {/* Title div */}
           <div className="justify-start mt-9 lg:w-8/12 md:w-full pl-3 hidden sm:block ">
             <div className="md:text-center lg:text-start  ">
