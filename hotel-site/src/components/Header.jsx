@@ -51,13 +51,13 @@ const Header = () => {
           {/* Title div */}
           <div className="justify-start mt-9 lg:w-8/12 md:w-full pl-3 hidden sm:block ">
             <div className="md:text-center lg:text-start  ">
-              <span className="text-white text-4xl font-bold mb-1 ">
+              <span className="text-white text-4xl font-bold font-serif mb-1 mt-3 ">
                 Enchanting Wilderness Retreat:
               </span>
-              <h1 className="text-4xl text-white font-bold mb-3 ">
+              <h1 className="text-4xl text-white font-bold mb-3 font-serif mt-3 ">
                 Unveiling Splendor
               </h1>
-              <p className="text-base text-white font-medium mt-2 ">
+              <p className="text-base text-white font-medium mt-3 ">
                 Discover a symphony of luxury and nature. Our hotel invites you
                 to indulge in a picturesque escape,
               </p>
