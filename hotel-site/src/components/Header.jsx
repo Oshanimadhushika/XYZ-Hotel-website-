@@ -6,6 +6,7 @@ import Hotel3 from "../assets/hotel3.png";
 import Hotel4 from "../assets/hotel4.png";
 import Hotel5 from "../assets/hotel5.png";
 import { MdOutlineArrowCircleRight } from "react-icons/md";
+import { Col, Row } from "reactstrap";
 
 const Header = () => {
   const [imageIndex, setImageIndex] = useState(0);
@@ -27,9 +28,8 @@ const Header = () => {
   };
 
   return (
-    <div className="h-75 dark-overlay" style={backgroundImageStyle}>
+    <div className="h-auto dark-overlay" style={backgroundImageStyle}>
       <div className="p-4 w-full h-full bg-opacity-40 bg-black">
-        
         <div className="flex justify-between">
           <NavBar />
         </div>
@@ -48,14 +48,16 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="flex flex-col justify-start mt-5 lg:w-8/12 md:w-full">
+        
+
+        <div className=" justify-start mt-9 lg:w-8/12 md:w-full pl-3 ">
           <span className="text-white text-4xl font-bold mb-1">
             Enchanting Wilderness Retreat:
           </span>
           <h1 className="text-4xl text-white font-bold mb-3">
             Unveiling Splendor
           </h1>
-          <p className="text-base text-white font-medium">
+          <p className="text-base text-white font-medium mt-2">
             Discover a symphony of luxury and nature. Our hotel invites you to
             indulge in a picturesque escape,
           </p>
@@ -63,7 +65,7 @@ const Header = () => {
             where sophistication meets the untamed beauty of the outdoors
           </span>
 
-          <div className="flex items-center">
+          <div className="flex items-center mt-4">
             <button className="bg-white text-black p-2 font-bold hover:text-white hover:bg-black mt-4 mr-4">
               Discover Our Rooms
             </button>
@@ -76,9 +78,78 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex justify-end mt-5">
-          <div>
-            
+
+{/* box white */}
+        <div className="flex lg:justify-end xl:justify-end sm:justify-center md:justify-center ">
+          <div className="bg-white rounded-md p-5 lg:w-1/3 xl:w-1/3 md:w-2/5 grid grid-cols-1 gap-y-3 md:mt-3">
+            <div>
+              <label htmlFor="checkIn" className="text-black font-bold">
+                Check In:
+              </label>
+              <input
+                type="date"
+                id="checkIn"
+                name="checkIn"
+                className="w-full mt-2 border-2 border-gray-300 rounded-md p-2"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="checkOut" className="text-black font-bold">
+                Check Out:
+              </label>
+              <input
+                type="date"
+                id="checkOut"
+                name="checkOut"
+                className="w-full mt-2 border-2 border-gray-300 rounded-md p-2"
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-x-3">
+              <div>
+                <label htmlFor="adults" className="text-black font-bold">
+                  Adults
+                </label>
+                <select
+                  id="adults"
+                  name="adults"
+                  className="w-full mt-2 border-2 border-gray-300 rounded-md p-2"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">1</option>
+                  <option value="5">2</option>
+                  <option value="6">3</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="children" className="text-black font-bold">
+                  Children
+                </label>
+                <select
+                  id="children"
+                  name="children"
+                  className="w-full mt-2 border-2 border-gray-300 rounded-md p-2"
+                >
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">1</option>
+                  <option value="5">2</option>
+                  <option value="6">3</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <button className="bg-black text-white w-full mt-3 p-2">
+                Check Availability
+              </button>
+            </div>
           </div>
         </div>
       </div>
