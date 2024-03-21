@@ -8,6 +8,7 @@ import Aco3 from "../assets/aco3.png";
 import Aco4 from "../assets/aco4.png";
 import AliceCarousel from 'react-alice-carousel';
 import { Row, Col } from 'reactstrap';
+import Service from "../components/Service";
 
 
 
@@ -198,7 +199,9 @@ const Home = () => {
       </section>
 
       <section>
-
+       <div>
+         <Service/>
+       </div>
       </section>
     </div>
   );

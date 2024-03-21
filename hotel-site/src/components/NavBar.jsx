@@ -5,21 +5,22 @@ import logo from '../assets/logo.png';
 import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
+import { Button } from 'reactstrap';
 
 const NavBar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = () => setSidebarOpen((prevState) => !prevState);
 
   return (
-    <div className="flex w-full">
+    <div className="flex w-full z-10">
       <div className="flex-grow sm:justify-center md:justify-center">
         <img src={logo} alt='' className="w-12 h-12" />
       </div>
 
-      <div className="flex justify-end ">
+      <div className="flex justify-end  ">
         <ul className='text-white text-md  gap-5 mt-3 font-semibold hidden md:hidden lg:flex xl:flex'>
           <NavLink
-            className='text-decoration-none transition-colors hover:text-yellow-500'
+            className='text-decoration-none transition-colors hover:text-yellow-500 font-bold'
             to='/'
             exact
           >
@@ -67,6 +68,14 @@ const NavBar = () => {
           >
             Contact Us
           </NavLink>
+
+          <Button
+            className='text-decoration-none border-2 border-white p-3 text white transition-colors hover:bg-white hover:text-black font-bold'
+            to='/'
+            exact
+          >
+            Book Your Stay
+          </Button>
         </ul>
 
         <div className='lg:hidden '>

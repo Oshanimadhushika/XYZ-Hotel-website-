@@ -1,0 +1,5 @@
+.service-background {
+    background-image: url("../assets/background.png");
+    background-size: cover;
+    height: 550px;
+}
