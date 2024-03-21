@@ -13,7 +13,7 @@ const OtherService = () => {
     <div>
       <div className="mt-9 flex p-9">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5 items-center">
-          <div className="col-span-1 md:hidden sm:hidden p-5 ">
+          <div className="col-span-1 md:hidden sm:hidden p-5 lg:block">
             <img src={Bridge} alt="bridge" className="w-full h-full" />
           </div>
 
