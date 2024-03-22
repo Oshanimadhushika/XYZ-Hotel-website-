@@ -12,7 +12,7 @@ const Accommodation = ({ url, title, desc, price }) => {
       <div className=" pb-5 w-full">
         
         <div>
-          <img src={url} alt={title} /> 
+          <img src={url} alt={title} className="w-full" /> 
         </div>
 
 
