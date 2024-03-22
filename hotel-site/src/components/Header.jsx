@@ -47,9 +47,9 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="flex flex-col lg:flex-row md:flex-col   mt-8  pb-4 pt-4">
+        <div className="flex flex-col lg:flex-row md:flex-col mt-6  pb-4 pt-4">
           {/* Title div */}
-          <div className="justify-start mt-9 lg:w-8/12 md:w-full pl-3 hidden sm:block ">
+          <div className="justify-start  lg:w-8/12 md:w-full pl-3 hidden sm:block gap-y-3 mt-11 ">
             <div className="md:text-center lg:text-start  ">
               <span className="text-white text-4xl font-bold font-serif mb-1 mt-3 ">
                 Enchanting Wilderness Retreat:

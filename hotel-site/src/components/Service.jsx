@@ -8,7 +8,7 @@ import "../style/Style.css";
 const Service = () => {
   return (
     <>
-    <div className="mb-5 " style={{height:"900px"}}>
+    <div className="mb-5 h-[980px] sm:h-[900px] md:h-[900px] lg:h-[900px] xl:h-[1100px] ">
       <div className=" service-background " style={{height:"550px"}}>
         
         <div className="text-center text-white  mb-7 lg:mb-1 md:mb-1">

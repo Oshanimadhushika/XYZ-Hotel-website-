@@ -210,6 +210,9 @@ const Home = () => {
          </div>
 </section>
 
+<section>
+  <div></div>
+</section>
     </div>
   );
 };
