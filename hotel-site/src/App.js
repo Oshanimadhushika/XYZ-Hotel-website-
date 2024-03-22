@@ -9,12 +9,9 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Home />} /> 
-        {/* 
-        Other routes go here...
-        */}
+        
       </Routes>
     </Router>
-    {/* <Contact/> */}
   </>
   );
 }

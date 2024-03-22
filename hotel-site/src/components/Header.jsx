@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <div className="h-auto dark-overlay" style={backgroundImageStyle}>
+    <div className="h-[800px] dark-overlay" style={backgroundImageStyle}>
       <div className="w-full h-full bg-opacity-40 bg-black">
         <div className="flex justify-between">
           <NavBar />
@@ -47,21 +47,21 @@ const Header = () => {
           ))}
         </div>
 
-        <div className="flex flex-col lg:flex-row md:flex-col mt-6  pb-4 pt-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center mt-6 pb-4 pt-4 p-8">
           {/* Title div */}
-          <div className="justify-start  lg:w-8/12 md:w-full pl-3 hidden sm:block gap-y-3 mt-11 ">
-            <div className="md:text-center lg:text-start  ">
-              <span className="text-white text-4xl font-bold font-serif mb-1 mt-3 ">
+          <div className="justify-start flex-col lg:w-8/12 md:w-full pl-3 gap-y-3 hidden sm:block">
+            <div className="md:text-center lg:text-start">
+              <span className="text-white text-4xl font-bold font-serif mb-1 mt-3">
                 Enchanting Wilderness Retreat:
               </span>
-              <h1 className="text-4xl text-white font-bold mb-3 font-serif mt-3 ">
+              <h1 className="text-4xl text-white font-bold mb-3 font-serif mt-3">
                 Unveiling Splendor
               </h1>
-              <p className="text-base text-white font-medium mt-3 ">
+              <p className="text-base text-white font-medium mt-3">
                 Discover a symphony of luxury and nature. Our hotel invites you
                 to indulge in a picturesque escape,
               </p>
-              <span className="mt-1 text-base text-white font-medium ">
+              <span className="mt-1 text-base text-white font-medium">
                 where sophistication meets the untamed beauty of the outdoors
               </span>
             </div>
@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {/* White box */}
-          <div className=" flex lg:justify-end md:justify-center  lg:w-4/12 md:w-full sm:justify-center mb-7 md:p-11  md:mt-3">
+          <div className="flex justify-center lg:w-4/12 md:w-full lg:justify-end md:justify-center mb-7 md:p-11 md:mt-3 pt-5">
             <div className="bg-white rounded-md p-5 w-full grid grid-cols-1 gap-y-3 md:mt-3">
               <div>
                 <label htmlFor="checkIn" className="text-black font-bold">
@@ -144,6 +144,9 @@ const Header = () => {
                   </select>
                 </div>
               </div>
+
+              {/* Rest of the input fields */}
+              {/* ... */}
 
               <div>
                 <button className="bg-black text-white w-full mt-3 p-2">
