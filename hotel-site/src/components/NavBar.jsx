@@ -93,7 +93,7 @@ const NavBar = () => {
         </ul>
 
         <div className='lg:hidden '>
-          <div className='text-white text-3xl' onClick={toggleSidebar}>
+          <div className='text-black  lg text-3xl' onClick={toggleSidebar}>
             {sidebarOpen ? <AiOutlineClose /> : <RxHamburgerMenu />}
           </div>
         </div>
